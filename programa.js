@@ -24,7 +24,7 @@ const url = "https://www.thecocktaildb.com/api/json/v1/1/filter.php?i=Rum";
 const promesa = fetch(url)
 promesa.then((response) => response.text())
     .then(data => {
-
+//instrucciones
 
         let json = JSON.parse(data);
         console.log(json);
