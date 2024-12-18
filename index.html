@@ -1,21 +1,32 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Tienda</title>
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 </head>
-<body>
+<body class="bg-dark bg-gradient">
   <header>
 
-    <nav class="navbar bg-dark border-bottom border-body" data-bs-theme="dark">
-        <div class="container-fluid">
-          <span class="navbar-brand mb-0 h1">Repositorio de cócteles</span>
+    <nav class="navbar bg-dark border-bottom border-body " data-bs-theme="dark">
+        <div class="container-fluid mt-2 mb-2">
+          <span class="navbar-brand mb-0 h1">Catálogo de cócteles</span>
           <form class="d-flex" role="search">
             
-            <button class="btn btn-outline-success" type="submit">Ver carrito</button>
+            <button class="btn btn-outline-danger text-white" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart3" viewBox="0 0 16 16">
+              <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l.84 4.479 9.144-.459L13.89 4zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
+            </svg> Ver carrito</button>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+              <div class="offcanvas-header">
+                <h5 id="offcanvasRightLabel">Carro de la compra</h5>
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              </div>
+              <div class="offcanvas-body" id="contenidoCarro">
+                
+              </div>
+            </div>
           </form>
         </div>
       </nav>
@@ -26,20 +37,13 @@
 
         </div>
     </div>
-<footer class="nav justify-content-center mt-2 pt-5 bg-secondary">
-    <li class="nav-item">
-        <a class="nav-link active" aria-current="page" href="#">Active</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Link</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Link</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-      </li>
-</footer>
+    <nav class="navbar navbar-light bg-dark">
+      <div class="container-fluid">
+        <span class="navbar-text text-white">
+        footer con texto
+        </span>
+      </div>
+    </nav>
     <script src="programa.js"></script>
 </body>
 </html>
