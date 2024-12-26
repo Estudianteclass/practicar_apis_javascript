@@ -1,0 +1,12 @@
+.card{
+    transition:all 0.3s;
+}
+.card:hover{
+
+    transform: scale(1.05);
+}
+
+#imprimir{
+align-self: left;
+    width:150px;
+}
